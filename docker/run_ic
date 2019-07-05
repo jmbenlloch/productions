@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo $1, $2
+
+source /software/miniconda3/etc/profile.d/conda.sh
+cd /software/REPONAME
+source manage.sh work_in_python_version_no_tests 3.7
+
+city $1 $2
+echo $1, $2
